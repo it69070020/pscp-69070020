@@ -1,4 +1,10 @@
-print("Hello World")
-print("E")
-print("EEE")
-print("1")
+"""การตรวจสอบบัตรนักศึกษา"""
+def main():
+    """Function for calculate"""
+    id = input()
+    if id[2] == "1" and id[3] == "6":
+        print("yes")
+    else:
+        print("no")
+
+main()
