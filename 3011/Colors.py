@@ -9,9 +9,15 @@ def main():
 
     if new_first_color == "Red" and new_second_color == "Yellow":
         print("Orange")
+    elif new_first_color == "Yellow" and new_second_color == "Red":
+        print("Orange")
     elif new_first_color == "Red" and new_second_color == "Blue":
         print("Violet")
+    elif new_first_color == "Blue" and new_second_color == "Red":
+        print("Violet")
     elif new_first_color == "Yellow" and new_second_color == "Blue":
+        print("Green")
+    elif new_first_color == "Blue" and new_second_color == "Yellow":
         print("Green")
     elif new_first_color == "Red" and new_second_color == "Red":
         print("Red")
