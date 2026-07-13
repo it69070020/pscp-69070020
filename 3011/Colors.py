@@ -2,8 +2,8 @@
 def main():
     """Primary color"""
 
-    first_color = input()
-    second_color = input()
+    first_color = str(input())
+    second_color = str(input())
 
     if first_color == "Red" and second_color == "Yellow":
         print("Orange")
