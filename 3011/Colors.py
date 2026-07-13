@@ -2,8 +2,8 @@
 def main():
     """Primary color"""
 
-    first_color = input().strip()
-    second_color = input().strip()
+    first_color = str(input())
+    second_color = str(input())
     new_first_color = first_color.capitalize()
     new_second_color = second_color.capitalize()
 
