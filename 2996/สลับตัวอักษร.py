@@ -6,4 +6,3 @@ def main():
     print(reversed_text)
 
 main()
-
