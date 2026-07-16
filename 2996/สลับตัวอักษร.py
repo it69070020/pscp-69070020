@@ -2,7 +2,7 @@
 def main():
     """Reverse Letters"""
     text = input()
-    reversed_text = text[::-1]
+    reversed_text = text[::-1].lower()
     print(reversed_text)
 
 main()
