@@ -15,25 +15,25 @@
 หมายเลข/ชื่อโจทย์ OJ:
 
 ```text
-
+OJ2996 - สลับตัวอักษร
 ```
 
 OJ submission ID ถ้ามีการส่งแล้ว:
 
 ```text
-
+https://ijudge.it.kmitl.ac.th/submissions/554989/overview
 ```
 
 สถานะ OJ:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 เวลาที่ใช้คิดและทำโจทย์ด้วยตนเอง:
 
 ```text
-
+0-15 minutes
 ```
 
 เลือกหนึ่งข้อ:
@@ -73,7 +73,16 @@ More than 4 weeks
 ถ้ายังไม่เข้าใจโจทย์ทั้งหมด ให้เขียนสิ่งที่เข้าใจในตอนนี้ ความเข้าใจอาจยังไม่ครบหรืออาจผิดได้ แต่ต้องพยายามอธิบายอย่างจริงใจ
 
 ```text
+โจทย์ต้องการ Program ที่รับ str มา 5 ตัวแล้วเรียงกลับหลัง
 
+Input:
+Program รับค่า str
+
+Output:
+Program ต้อง print ตัวอักษรจากตัวเดิมโดยสลับจากหลังมาหน้า
+
+Costraints:
+Output อาจต้องเป็นตัวเล็กทั้งหมดเพราะมีการบอกใบ้ในโจทย์
 ```
 
 ---
@@ -93,9 +102,9 @@ More than 4 weeks
 สามารถเขียนเป็น pseudocode, flowchart idea หรือขั้นตอนความคิดได้
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1: รับค่า str
+Step 2: นำค่าที่ได้มาสลับกลับหลัง
+Step 3: print ออกมา
 ```
 
 ---
@@ -115,7 +124,8 @@ Step 3:
 ห้ามคัดลอกคำอธิบายจากคนอื่น
 
 ```text
-
+เมื่อมีการส่งไปครั้งแรกทำให้รู้ว่า testcase บางตัวไม่ผ่านเลยทำให้รู้ว่าต้องเปลี่ยนเป็นตัวเล็กก่อน
+วิธีการทำงานเหมือนเดิมหมดยกเว้น Step 3 ให้มีการปรับตัวหนังสือให้เล็กด้วยแทนที่จะสลับอย่างดียว
 ```
 
 ---
@@ -135,31 +145,31 @@ Step 3:
 ทำไมเลือก case นี้:
 
 ```text
-
+เช็คกรณีที่มีตัวใหญ่ด้วย
 ```
 
 Input:
 
 ```text
-
+EeeEaa
 ```
 
 Expected output:
 
 ```text
-
+aaeeee
 ```
 
 Actual output:
 
 ```text
-
+aaeeee
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +177,31 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+เช็คกรณีที่ตัวใหญ่หมด
 ```
 
 Input:
 
 ```text
-
+ABCD
 ```
 
 Expected output:
 
 ```text
-
+dcba
 ```
 
 Actual output:
 
 ```text
-
+dcba
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +209,31 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+เช็คกรณีทั่วๆไป
 ```
 
 Input:
 
 ```text
-
+abcdcd
 ```
 
 Expected output:
 
 ```text
-
+dcdcba
 ```
 
 Actual output:
 
 ```text
-
+dcdcba
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,7 +243,7 @@ Pass / Not Pass
 ใช้ AI กับโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช้ AI ต้องทำไฟล์นี้ด้วย:
@@ -251,7 +261,7 @@ ai_reflection.md
 ได้ถามเพื่อน TA ผู้สอน หรือบุคคลอื่นเพื่อขอความช่วยเหลือในโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช่ ให้อธิบายสั้น ๆ ว่าได้รับความช่วยเหลือแบบใด
@@ -305,10 +315,10 @@ No
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. | Yes |
+| I understand my final code. | Yes |
+| I recorded the real OJ status. | Yes |
+| I did not copy AI-generated text directly into this file. | Yes |
+| I did not copy code from another person. | Yes |
+| If I received human help, I disclosed it in this file. | Yes |
+| I submitted the final code to the OJ by myself. | Yes |
