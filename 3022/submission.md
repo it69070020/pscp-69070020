@@ -12,25 +12,28 @@
 
 ## 1. ข้อมูล OJ
 
-หมายเลข/ชื่อโจทย์ OJ: 
-2996
+หมายเลข/ชื่อโจทย์ OJ:
+
+```text
+OJ3022 - Temperature
+```
 
 OJ submission ID ถ้ามีการส่งแล้ว:
 
 ```text
-
+https://ijudge.it.kmitl.ac.th/submissions/564171/overview
 ```
 
 สถานะ OJ:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 เวลาที่ใช้คิดและทำโจทย์ด้วยตนเอง:
 
 ```text
-
+1-3 hours
 ```
 
 เลือกหนึ่งข้อ:
@@ -70,7 +73,16 @@ More than 4 weeks
 ถ้ายังไม่เข้าใจโจทย์ทั้งหมด ให้เขียนสิ่งที่เข้าใจในตอนนี้ ความเข้าใจอาจยังไม่ครบหรืออาจผิดได้ แต่ต้องพยายามอธิบายอย่างจริงใจ
 
 ```text
+โจทย์ให้ทำ Program แปลงค่าหน่วยของอุณหภูมิ C,K,F,R
 
+Input:
+เป็นแกรมรับค่า float (อุณหภูมิ) และหน่วยที่ต้องการเปลี่ยนจากอีกตัวเป็นอีกตัว
+
+Output:
+ผลอุณหภูมิหลังจากแปลงหน่วยแล้วเป็น float ทศนิยม 2 ตำแหน่ง
+
+Constraints:
+มีการคำนวณหลายขั้นตอน ควรใส่ลำดับ math operator กับวงเล็บให้ดี
 ```
 
 ---
@@ -90,9 +102,9 @@ More than 4 weeks
 สามารถเขียนเป็น pseudocode, flowchart idea หรือขั้นตอนความคิดได้
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1: อ่านค่า temp และหน่วยที่ต้องการแปลง
+Step 2: นำมาเข้าสูตรคำนวณแต่ละตัว
+Step 3: print ค่า ตาม conditions ออกมาเป็นในหน่วยที่ต้องการและทศนิยม 2 ตำแหน่ง
 ```
 
 ---
@@ -112,7 +124,7 @@ Step 3:
 ห้ามคัดลอกคำอธิบายจากคนอื่น
 
 ```text
-
+เหมือนกับแผนแรก แต่มีการเพิ่ม กรณีที่เปลี่ยนตัวเดิมเป็นตัวเดิม เพราะส่งครั้งแรกไม่ผ่านจึงได้นึกออก
 ```
 
 ---
@@ -132,31 +144,33 @@ Step 3:
 ทำไมเลือก case นี้:
 
 ```text
-
+เช็คกรณีที่ เปลี่ยนตัวเองเป็นตัวเอง
 ```
 
 Input:
 
 ```text
-
+10
+K
+K
 ```
 
 Expected output:
 
 ```text
-
+10.00
 ```
 
 Actual output:
 
 ```text
-
+10.00
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -164,31 +178,33 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+เช็คกรณีที่แปลงเยอะมากๆ 
 ```
 
 Input:
 
 ```text
-
+4000000
+K
+F
 ```
 
 Expected output:
 
 ```text
-
+7199540.33
 ```
 
 Actual output:
 
 ```text
-
+7199540.33
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -196,31 +212,33 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+เช็คกรณีทั่วๆไป
 ```
 
 Input:
 
 ```text
-
+345
+R
+K
 ```
 
 Expected output:
 
 ```text
-
+191.67
 ```
 
 Actual output:
 
 ```text
-
+191.67
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -230,7 +248,7 @@ Pass / Not Pass
 ใช้ AI กับโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช้ AI ต้องทำไฟล์นี้ด้วย:
@@ -248,7 +266,7 @@ ai_reflection.md
 ได้ถามเพื่อน TA ผู้สอน หรือบุคคลอื่นเพื่อขอความช่วยเหลือในโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช่ ให้อธิบายสั้น ๆ ว่าได้รับความช่วยเหลือแบบใด
@@ -302,10 +320,10 @@ No
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. | Yes |
+| I understand my final code. | Yes |
+| I recorded the real OJ status. | Yes |
+| I did not copy AI-generated text directly into this file. | Yes |
+| I did not copy code from another person. | Yes |
+| If I received human help, I disclosed it in this file. | Yes |
+| I submitted the final code to the OJ by myself. | Yes |
