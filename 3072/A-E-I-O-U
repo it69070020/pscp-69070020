@@ -1,0 +1,24 @@
+"""Lets simplify it"""
+def main():
+    """SEKAIIII IDE ICHIBAN OHIME SAMA"""
+    text = input()
+    text_lower = text.lower()      
+
+    a = text_lower.count("a")
+    e = text_lower.count("e")
+    i = text_lower.count("i")
+    o = text_lower.count("o")
+    u = text_lower.count("u")
+
+    if a > 0:
+        print("a : " + str(a))
+    if e > 0:
+        print("e : " + str(e))
+    if i > 0:
+        print("i : " + str(i))
+    if o > 0:
+        print("o : " + str(o))
+    if u > 0:
+        print("u : " + str(u))
+
+main()
